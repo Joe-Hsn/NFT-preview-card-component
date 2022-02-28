@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live site](https://joe-hsn.github.io/NFT-preview-card-component/)
 
 ## My process
 
@@ -49,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-- simply improving my knowledge about using Bootstrap 5 and memorizing the css selectors and html inline styling.
+- simply for improving my knowledge about using Bootstrap 5 and memorizing the css selectors and html inline styling.
 
 ```html
 <img src="images/image-avatar.png" alt="#" class="img-fluid me-3" style="width: 3rem; border: 1.5px solid #fff; border-radius: 50%;">
