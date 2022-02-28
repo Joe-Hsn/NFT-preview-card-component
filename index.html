@@ -29,6 +29,7 @@
     }
     .card-title {
       cursor: pointer;
+      transition: 0.5s color ease-in-out;
     }
     .card > div > img {
       box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
@@ -84,43 +85,34 @@
   </style>
 </head>
 <body>
-  <div class="container d-flex justify-content-center align-items-center">
-    <div class="card p-4 text-white" style="width: 22rem;">
-      <div class="effect">
-        <img src="images/image-equilibrium.jpg" class="card-img-top rounded" alt="...">
-        <div class="svg_icn">
-          <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+  <main>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="card p-4 text-white" style="width: 22rem;">
+        <div class="effect">
+          <img src="images/image-equilibrium.jpg" class="card-img-top rounded" alt="Equilibrium NFT">
+          <div class="svg_icn">
+            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+          </div>
         </div>
-      </div>
-      <div class="card-body pt-3 p-0">
-        <h5 class="card-title">Equilibrium #3429</h5>
-        <span class="soft_blue d-block card-text my-3">Our Equilibrium collection promotes balance and calm.</span>
-        <div class="price d-flex">
-          <span class="me-auto d-flex align-items-center fw-bold cyan"><img src="images/icon-ethereum.svg" alt="#" class="me-1">0.041 ETH</span>
-          <span class="d-flex align-items-center soft_blue"><img src="images/icon-clock.svg" alt="#" class="me-1">3 days left</span>
-        </div>
-        <hr style="opacity: 0.25;">
-        <div class="author">
-          <img src="images/image-avatar.png" alt="#" class="img-fluid me-3" style="width: 3rem; border: 1.5px solid #fff; border-radius: 50%;">
-          <span class="soft_blue">Creation of <a class="text-white author_name" href="#">Jules Wyvern</a></span>
+        <div class="card-body pt-3 p-0">
+          <h1 class="card-title">Equilibrium #3429</h1>
+          <span class="soft_blue d-block card-text my-3">Our Equilibrium collection promotes balance and calm.</span>
+          <div class="price d-flex">
+            <span class="me-auto d-flex align-items-center fw-bold cyan"><img src="images/icon-ethereum.svg" alt="#" class="me-1">0.041 ETH</span>
+            <span class="d-flex align-items-center soft_blue"><img src="images/icon-clock.svg" alt="#" class="me-1">3 days left</span>
+          </div>
+          <hr style="opacity: 0.25;">
+          <div class="author">
+            <img src="images/image-avatar.png" alt="Avatar" class="img-fluid me-3" style="width: 3rem; border: 1.5px solid #fff; border-radius: 50%;">
+            <span class="soft_blue">Creation of <a class="text-white author_name" href="#">Jules Wyvern</a></span>
+          </div>
         </div>
       </div>
     </div>
-    <!-- <div class="card p-3 text-white">
-      <img src="" alt="#" class="card-img-top">
-      <div class="card-body">
-        <h3 class="lead fw-bold">Equilibrium #3429</h3>
-        <span class="d-block"></span>
-      
-        <span class="lead w-100"><span class="me-auto"></span><span></span></span>
-        
-        
-      </div>
-    </div> -->
-  </div>
-  <div class="attribution d-none d-md-block">
-    Challenge by <a class="text-light bg-danger p-1" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-    Coded by <a class="text-light bg-danger p-1" href="#">Youssef Hassan</a>
-  </div>
+    <div class="attribution d-none d-md-block">
+      Challenge by <a class="text-light bg-danger p-1" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a class="text-light bg-danger p-1" href="#">Youssef Hassan</a>
+    </div>
+  </main>
 </body>
 </html>
