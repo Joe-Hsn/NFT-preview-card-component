@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- box-shadow -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    :root {
+      --softBlue: hsl(215, 51%, 70%);
+      --cyan: hsl(178, 100%, 50%);
+      --veryDarkBlueMainBG: hsl(217, 54%, 11%); 
+      --veryDarkBlueCardBG: hsl(216, 50%, 16%); 
+      --veryDarkBlueLine: hsl(215, 32%, 27%); 
+      --fontSizeParagraph: 18px;
+    }
+    body {
+      background-color: var(--veryDarkBlueMainBG);
+    }
+    .container {
+      height: 100vh;
+    }
+    .card {
+      border-radius: 8px !important;
+      background-color: var(--veryDarkBlueCardBG);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    }
+    .card-title {
+      cursor: pointer;
+    }
+    .card > div > img {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    } 
+    .soft_blue {
+      color: var(--softBlue);
+    }
+    .cyan {
+      color: var(--cyan);
+    }
+    .d-block {
+      font-size: var(--fontSizeParagraph);
+    }
+    .svg_icn {
+      position: absolute;
+      top:0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #00fff750;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      cursor: pointer;
+    }
+    .svg_icn svg {
+      color: var(--cyan);
+    }
+    .effect {
+      border-radius: 8px !important;
+      position: relative;
+      overflow: hidden;
+    }
+    .effect:hover > .svg_icn {
+      display: flex;
+    }
+    .author_name:hover {
+      color: var(--cyan) !important;
+    }
+    .card-title:hover {
+      color: var(--cyan) !important;
+    }
+    .attribution {
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 11px;
+    }
+    .attribution a {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="card p-4 text-white" style="width: 22rem;">
+      <div class="effect">
+        <img src="images/image-equilibrium.jpg" class="card-img-top rounded" alt="...">
+        <div class="svg_icn">
+          <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+        </div>
+      </div>
+      <div class="card-body pt-3 p-0">
+        <h5 class="card-title">Equilibrium #3429</h5>
+        <span class="soft_blue d-block card-text my-3">Our Equilibrium collection promotes balance and calm.</span>
+        <div class="price d-flex">
+          <span class="me-auto d-flex align-items-center fw-bold cyan"><img src="images/icon-ethereum.svg" alt="#" class="me-1">0.041 ETH</span>
+          <span class="d-flex align-items-center soft_blue"><img src="images/icon-clock.svg" alt="#" class="me-1">3 days left</span>
+        </div>
+        <hr style="opacity: 0.25;">
+        <div class="author">
+          <img src="images/image-avatar.png" alt="#" class="img-fluid me-3" style="width: 3rem; border: 1.5px solid #fff; border-radius: 50%;">
+          <span class="soft_blue">Creation of <a class="text-white author_name" href="#">Jules Wyvern</a></span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card p-3 text-white">
+      <img src="" alt="#" class="card-img-top">
+      <div class="card-body">
+        <h3 class="lead fw-bold">Equilibrium #3429</h3>
+        <span class="d-block"></span>
+      
+        <span class="lead w-100"><span class="me-auto"></span><span></span></span>
+        
+        
+      </div>
+    </div> -->
+  </div>
+  <div class="attribution d-none d-md-block">
+    Challenge by <a class="text-light bg-danger p-1" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a class="text-light bg-danger p-1" href="#">Youssef Hassan</a>
+  </div>
+</body>
+</html>
